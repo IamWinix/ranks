@@ -18,4 +18,27 @@ $(document).ready(function() {
       cashAppInfo = "Pay $7.00 on Cash App: $IamWinix";
       perks = "MVP+ Perks: " + "ALL MVP's perms, /Sell bonus - 15%, Rank obtainable only items, MVP+ only pet, Vote crate luck bonus 10%, /msgtoggle, /paytoggle, /tpauto, /rest, /tptoggle";
     } else if (rankName === "MVP++ Rank") {
-      cash
+      cashAppInfo = "Pay $10.00 on Cash App: $IamWinix";
+      perks = "MVP++ Perks: " + "All previous perks, /Sell bonus - 20%, Vote crate luck bonus 20%, MVP++ only pet, **COLOR AND FORMAT IN CHAT**, /smelt, /afk";
+    }
+
+    $(".popup").remove();
+
+    var popupHtml = `
+      <div class="popup">
+        <h3>${rankName}</h3>
+        <p>${cashAppInfo}</p>
+        <p>${perks}</p>
+        <img src="${cashAppLogo}" alt="Cash App Logo" style="width: 150px; height: 150px;">
+      </div>
+    `;
+
+    $("body").append(popupHtml);
+  });
+
+  $(document).on("click", function(event) {
+    if (!$(event.target).closest(".rank, .popup").length) {
+      $(".popup").remove();
+    }
+  });
+});
