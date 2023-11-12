@@ -29,7 +29,7 @@ $(document).ready(function() {
         <h3>${rankName}</h3>
         <p>${cashAppInfo}</p>
         <p>${perks}</p>
-        <img src="${cashAppLogo}" alt="Cash App Logo" style="width: 150px; height: 150px;">
+        <img src="${cashAppLogo}" alt="Cash App Logo" style="width: 200px; height: 200px;">
       </div>
     `;
 
