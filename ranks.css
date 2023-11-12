@@ -40,10 +40,17 @@ header h1 {
   margin: 30px;
   cursor: pointer;
   transition: transform 0.3s ease;
+  background-color: orange;
+  border: 2px solid blue;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .rank:hover {
   transform: translateY(-10px);
+  background-color: blue;
+  border-color: orange;
 }
 
 .rank img {
@@ -58,6 +65,7 @@ header h1 {
   margin: 20px 0 0 0;
   font-size: 24px;
   text-align: center;
+  color: #fff;
 }
 
 footer {
