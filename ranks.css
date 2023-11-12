@@ -7,22 +7,16 @@ body {
 }
 
 header {
-  background-color: #333;
+  background-color: transparent; /* Set background color to transparent */
   color: #fff;
   padding: 20px;
   text-align: center;
 }
 
-header h1 {
-  margin: 0;
-  font-size: 48px;
-  letter-spacing: 2px;
-}
-
-.ranks-heading {
-  margin-top: 20px;
-  font-size: 36px;
-  letter-spacing: 1px;
+header h1, .ranks-heading {
+  background: linear-gradient(transparent, transparent); /* Apply gradient for text transparency */
+  -webkit-background-clip: text; /* Clip text to the background gradient */
+  color: transparent; /* Set text color to transparent */
 }
 
 #ranks {
