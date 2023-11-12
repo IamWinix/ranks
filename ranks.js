@@ -1,8 +1,8 @@
 $(document).ready(function() {
   $(".rank").click(function() {
     var rankName = $(this).find("p").text();
-    var cashAppInfo = "";
-    var cashAppLogo = "cashapp.PNG";
+    var payPalInfo = "";
+    var payPalLogo = "Paypal.PNG";
     var perks = "";
 
     if (rankName === "VIP Rank") {
@@ -27,9 +27,9 @@ $(document).ready(function() {
     var popupHtml = `
       <div class="popup">
         <h3>${rankName}</h3>
-        <p>${cashAppInfo}</p>
+        <p>${payPalInfo}</p>
         <p>${perks}</p>
-        <img src="${cashAppLogo}" alt="Cash App Logo" style="width: 300px; height: 300px;">
+        <img src="${payPalLogo}" alt="PayPal Logo" style="width: 300px; height: 300px;">
       </div>
     `;
 
