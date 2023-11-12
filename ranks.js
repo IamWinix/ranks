@@ -2,7 +2,7 @@ $(document).ready(function() {
   $(".rank").click(function() {
     var rankName = $(this).find("p").text();
     var cashAppInfo = "";
-    var cashAppLogo = "cashapp.png";
+    var cashAppLogo = "cashapp.PNG";
     var perks = "";
 
     if (rankName === "VIP Rank") {
