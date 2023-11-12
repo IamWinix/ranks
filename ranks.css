@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #222;
+  color: #fff;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.ranks-heading {
+  margin-top: 20px;
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+
+#ranks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px;
+}
+
+.rank {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.rank:hover {
+  transform: translateY(-10px);
+}
+
+.rank img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.rank p {
+  margin: 20px 0 0 0;
+  font-size: 24px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px; /* Increase the font size here */
+}
+
+footer p {
+  margin: 0;
+}
