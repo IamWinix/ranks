@@ -59,7 +59,7 @@ header h1, .ranks-heading {
   margin: 15px 0 0 0; /* Adjust margin for smaller screens */
   font-size: 18px; /* Adjust font size for smaller screens */
   text-align: center;
-  color: #fff;
+  color: #fff; /* Set text color to the background color */
 }
 
 footer {
