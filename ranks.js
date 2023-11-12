@@ -1,67 +1,24 @@
-// VIP Perks
-function vipPerks() {
-  // Add code for VIP perks here
-  // e.g. /repair all, /depth, /kittycannon, etc.
-}
-
-// VIP+ Perks
-function vipPlusPerks() {
-  // Add code for VIP+ perks here
-  // e.g. /Sell bonus - 7.5%, more auction house slots, etc.
-}
-
-// MVP Perks
-function mvpPerks() {
-  // Add code for MVP perks here
-  // e.g. /Sell bonus - 10%, MVP only chat, etc.
-}
-
-// MVP+ Perks
-function mvpPlusPerks() {
-  // Add code for MVP+ perks here
-  // e.g. /Sell bonus - 15%, rank obtainable only items, etc.
-}
-
-// MVP++ Perks
-function mvpPlusPlusPerks() {
-  // Add code for MVP++ perks here
-  // e.g. /Sell bonus - 20%, vote crate luck bonus 20%, etc.
-}
-
-// Call the relevant functions based on the user's rank
-if (userRank === 'VIP') {
-  vipPerks();
-} else if (userRank === 'VIP+') {
-  vipPlusPerks();
-} else if (userRank === 'MVP') {
-  mvpPerks();
-} else if (userRank === 'MVP+') {
-  mvpPlusPerks();
-} else if (userRank === 'MVP++') {
-  mvpPlusPlusPerks();
-}
-
 $(document).ready(function() {
   $(".rank").click(function() {
     var rankName = $(this).find("p").text();
     var cashAppInfo = "";
-    var cashAppLogo = "cashapp.PNG";
+    var cashAppLogo = "cashapp.png";
     var perks = "";
 
     if (rankName === "VIP Rank") {
-      cashAppInfo = "CashApp: $2.00";
+      cashAppInfo = "Pay $2.00 on Cash App: $IamWinix";
       perks = "VIP Perks: /repair all, /depth, /kittycannon";
     } else if (rankName === "VIP+ Rank") {
-      cashAppInfo = "CashApp: $3.50";
+      cashAppInfo = "Pay $3.50 on Cash App: $IamWinix";
       perks = "VIP+ Perks: /Sell bonus - 7.5%, more auction house slots";
     } else if (rankName === "MVP Rank") {
-      cashAppInfo = "CashApp: $5.00";
+      cashAppInfo = "Pay $5.00 on Cash App: $IamWinix";
       perks = "MVP Perks: /Sell bonus - 10%, MVP only chat";
     } else if (rankName === "MVP+ Rank") {
-      cashAppInfo = "CashApp: $7.00";
+      cashAppInfo = "Pay $7.00 on Cash App: $IamWinix";
       perks = "MVP+ Perks: /Sell bonus - 15%, rank obtainable only items";
     } else if (rankName === "MVP++ Rank") {
-      cashAppInfo = "CashApp: $10.00";
+      cashAppInfo = "Pay $10.00 on Cash App: $IamWinix";
       perks = "MVP++ Perks: /Sell bonus - 20%, vote crate luck bonus 20%";
     }
 
